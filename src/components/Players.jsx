@@ -30,7 +30,7 @@ export default function Players(props) {
 
   return (
     <>
-      <li>
+      <li className={props.isActive ? "active" : undefined}>
         <span className="player">
           {playerName}
           <span className="player-symbol">{props.symbol}</span>
